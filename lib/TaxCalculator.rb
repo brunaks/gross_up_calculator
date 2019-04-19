@@ -39,7 +39,7 @@ class WashingtonPaidFamilyLeaveTax
   def calculate(employee)
     taxes = Array.new
     taxes.push(WashingtonPaidFamilyLeave.new.calculate(employee))
-    taxes.push(WashingtonMedicalLeave.new.calculate(employee))
+    taxes.push(WashingtonPaidMedicalLeave.new.calculate(employee))
     taxes.flatten
   end
 
@@ -47,25 +47,27 @@ end
 
 class WashingtonPaidFamilyLeave < WashingtonPaidFamilyLeaveTax
 
+  EMPLOYEE_TAX_DESCRIPTION = 'Paid Family Leave - Employee Premium'
+
   def initialize
-    @description = 'Paid Family Leave - Employee Premium'
+    @description = EMPLOYEE_TAX_DESCRIPTION
     @tax_amount  = 0.00
   end
 
   def calculate(employee)
-    tax = TaxInformation.new
-    tax.description = @description
-    tax.tax_amount = round_tax(calculate_total_premium(employee) * 0.3333)
-    tax.taxable_amount = employee.gross
-    tax
+    tax_amount = round_tax(calculate_total_premium(employee) * 0.3333)
+    TaxInformation.new(@description, tax_amount, employee.gross)
   end
 end
 
-class WashingtonMedicalLeave < WashingtonPaidFamilyLeaveTax
+class WashingtonPaidMedicalLeave < WashingtonPaidFamilyLeaveTax
+
+  EMPLOYEE_TAX_DESCRIPTION = 'Paid Medical Leave - Employee Premium'
+  EMPLOYER_TAX_DESCRIPTION = 'Paid Medical Leave - Employer Premium'
 
   def initialize
-    @description_for_employee = 'Paid Medical Leave - Employee Premium'
-    @description_for_employer = 'Paid Medical Leave - Employer Premium'
+    @description_for_employee = EMPLOYEE_TAX_DESCRIPTION
+    @description_for_employer = EMPLOYER_TAX_DESCRIPTION
   end
 
   def calculate(employee)
@@ -76,19 +78,13 @@ class WashingtonMedicalLeave < WashingtonPaidFamilyLeaveTax
   end
 
   def calculate_for_employee(employee)
-    tax = TaxInformation.new
-    tax.description = @description_for_employee
-    tax.tax_amount = round_tax(calculate_total_premium(employee) * 0.3000)
-    tax.taxable_amount = employee.gross
-    tax
+    tax_amount = round_tax(calculate_total_premium(employee) * 0.3000)
+    TaxInformation.new(@description_for_employee, tax_amount, employee.gross)
   end
 
   def calculate_for_employer(employee)
-    tax = TaxInformation.new
-    tax.description = @description_for_employer
-    tax.tax_amount = round_tax(calculate_total_premium(employee) * 0.3667)
-    tax.taxable_amount = employee.gross
-    tax
+    tax_amount = round_tax(calculate_total_premium(employee) * 0.3667)
+    TaxInformation.new(@description_for_employer, tax_amount, employee.gross)
   end
 
 end

@@ -24,10 +24,10 @@ end
 
 class TaxInformation
 
-  def initialize
-    @description = ''
-    @tax_amount = 0.00
-    @taxable_amount = 0.00
+  def initialize(description, tax_amount, taxable_amount)
+    @description = description
+    @tax_amount = tax_amount
+    @taxable_amount = taxable_amount
   end
 
   def description=(description)
