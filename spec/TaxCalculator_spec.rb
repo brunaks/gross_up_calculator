@@ -13,6 +13,7 @@ describe TaxCalculator do
     end
 
     context 'if employee has no wages' do
+
       it 'calculates no taxes' do
         @employee.gross = 0.00
         result = TaxCalculator.new.execute(@employee)
@@ -32,6 +33,18 @@ describe TaxCalculator do
                                     TaxInformation.new(WashingtonPaidMedicalLeave::EMPLOYER_TAX_DESCRIPTION, 3.67, 2500.00)]))
       end
 
+      context 'if the year to date wages are over the ceiling' do
+
+        it 'no tax is calculated' do
+          @employee.gross = 2500.00
+          @employee.year_to_date_wages = 132_900.00
+          result = TaxCalculator.new.execute(@employee)
+          expect(result.taxes).to(eq([TaxInformation.new(WashingtonPaidFamilyLeave::EMPLOYEE_TAX_DESCRIPTION, 0.00, 0.00),
+                                      TaxInformation.new(WashingtonPaidMedicalLeave::EMPLOYEE_TAX_DESCRIPTION, 0.00, 0.00),
+                                      TaxInformation.new(WashingtonPaidMedicalLeave::EMPLOYER_TAX_DESCRIPTION, 0.00, 0.00)]))
+
+        end
+      end
     end
   end
 end

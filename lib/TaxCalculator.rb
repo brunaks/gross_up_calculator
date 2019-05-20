@@ -15,7 +15,7 @@ class TaxCalculatorForWashington
 
   def execute(employee)
     result = Result.new
-    taxes  = WashingtonPaidFamilyLeaveTax.new.calculate(employee)
+    taxes  = WashingtonPaidFamilyAndMedicalLeaveTax.new.calculate(employee)
     taxes.each do |tax|
       result.addTax(tax)
     end
@@ -24,9 +24,17 @@ class TaxCalculatorForWashington
 
 end
 
-class WashingtonPaidFamilyLeaveTax
+class WashingtonPaidFamilyAndMedicalLeaveTax
+
+  def initialize
+    @ceiling = 132900.00
+  end
 
   def calculate_total_premium(employee)
+    if employee.year_to_date_wages == 132900.00
+      total_premium = 0.00
+      return total_premium
+    end
     total_premium = employee.gross * 0.004
     total_premium
   end
@@ -45,7 +53,7 @@ class WashingtonPaidFamilyLeaveTax
 
 end
 
-class WashingtonPaidFamilyLeave < WashingtonPaidFamilyLeaveTax
+class WashingtonPaidFamilyLeave < WashingtonPaidFamilyAndMedicalLeaveTax
 
   EMPLOYEE_TAX_DESCRIPTION = 'Paid Family Leave - Employee Premium'
 
@@ -60,7 +68,7 @@ class WashingtonPaidFamilyLeave < WashingtonPaidFamilyLeaveTax
   end
 end
 
-class WashingtonPaidMedicalLeave < WashingtonPaidFamilyLeaveTax
+class WashingtonPaidMedicalLeave < WashingtonPaidFamilyAndMedicalLeaveTax
 
   EMPLOYEE_TAX_DESCRIPTION = 'Paid Medical Leave - Employee Premium'
   EMPLOYER_TAX_DESCRIPTION = 'Paid Medical Leave - Employer Premium'
