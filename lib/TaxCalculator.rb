@@ -1,8 +1,5 @@
 class TaxCalculator
 
-  def initialize
-  end
-
   def execute(employee)
     taxCalculatorForWashington = TaxCalculatorForWashington.new
     result = taxCalculatorForWashington.execute(employee)
@@ -26,16 +23,12 @@ end
 
 class WashingtonPaidFamilyAndMedicalLeaveTax
 
-  def initialize
-    @ceiling = 132900.00
+  def ceiling
+    132900.00
   end
 
   def calculate_total_premium(employee)
-    if employee.year_to_date_wages == 132900.00
-      total_premium = 0.00
-      return total_premium
-    end
-    total_premium = employee.gross * 0.004
+    total_premium = employee.taxable_amount(ceiling) * 0.004
     total_premium
   end
 
@@ -64,7 +57,7 @@ class WashingtonPaidFamilyLeave < WashingtonPaidFamilyAndMedicalLeaveTax
 
   def calculate(employee)
     tax_amount = round_tax(calculate_total_premium(employee) * 0.3333)
-    TaxInformation.new(@description, tax_amount, employee.gross)
+    TaxInformation.new(@description, tax_amount, employee.taxable_amount(ceiling))
   end
 end
 
@@ -87,12 +80,12 @@ class WashingtonPaidMedicalLeave < WashingtonPaidFamilyAndMedicalLeaveTax
 
   def calculate_for_employee(employee)
     tax_amount = round_tax(calculate_total_premium(employee) * 0.3000)
-    TaxInformation.new(@description_for_employee, tax_amount, employee.gross)
+    TaxInformation.new(@description_for_employee, tax_amount, employee.taxable_amount(ceiling))
   end
 
   def calculate_for_employer(employee)
     tax_amount = round_tax(calculate_total_premium(employee) * 0.3667)
-    TaxInformation.new(@description_for_employer, tax_amount, employee.gross)
+    TaxInformation.new(@description_for_employer, tax_amount, employee.taxable_amount(ceiling))
   end
 
 end

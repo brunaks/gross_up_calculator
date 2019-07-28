@@ -15,16 +15,16 @@ class Employee
     @gross = gross
   end
 
-  def gross
-    @gross
-  end
-
-  def year_to_date_wages
-    @year_to_date_wages
-  end
-
   def year_to_date_wages=(year_to_date_wages)
     @year_to_date_wages = year_to_date_wages
+  end
+
+  def taxable_amount(ceiling)
+    if @year_to_date_wages == ceiling
+      0.00
+    else
+      [@gross, (ceiling - @year_to_date_wages)].min
+    end
   end
 
 end

@@ -7,10 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11d63628-b033-48fd-b4da-1d6d4110a9ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Server.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/grossUp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/grossUp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Result.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Result.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/TaxCalculator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/TaxCalculator.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/employee.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/employee.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/TaxCalculator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/TaxCalculator_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,13 +22,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="276" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/TaxCalculator_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="271">
+              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -32,26 +39,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/employee.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/TaxCalculator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="345">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/TaxCalculator.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/Server.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Result.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="73">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -75,17 +96,18 @@
         <option value="$PROJECT_DIR$/spec/TaxesCalculator_spec.rb" />
         <option value="$PROJECT_DIR$/spec/grossUp_spec.rb" />
         <option value="$PROJECT_DIR$/lib/grossUpCalculator.rb" />
-        <option value="$PROJECT_DIR$/lib/Result.rb" />
-        <option value="$PROJECT_DIR$/lib/employee.rb" />
         <option value="$PROJECT_DIR$/spec/TaxCalculator_spec.rb" />
         <option value="$PROJECT_DIR$/lib/TaxCalculator.rb" />
+        <option value="$PROJECT_DIR$/lib/employee.rb" />
+        <option value="$PROJECT_DIR$/lib/Result.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="709" />
+    <option name="height" value="705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,6 +122,11 @@
             <path>
               <item name="grossUp" type="b2602c69:ProjectViewProjectNode" />
               <item name="grossUp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="grossUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grossUp" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="grossUp" type="b2602c69:ProjectViewProjectNode" />
@@ -185,55 +212,64 @@
       <workItem from="1555874307207" duration="367000" />
       <workItem from="1557971480006" duration="893000" />
       <workItem from="1557972450141" duration="896000" />
-      <workItem from="1558281473601" duration="342000" />
+      <workItem from="1558281473601" duration="861000" />
+      <workItem from="1564273529290" duration="1643000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding tests for wages over ceiling">
+      <created>1558319259917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558319259917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="rspec - 2019.05.15 at 23h 15m 15s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 45m 30s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 15m 20s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 45m 44s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 15m 24s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 45m 47s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 18m 15s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 46m 22s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 18m 25s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 46m 39s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 18m 57s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 47m 25s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 20m 07s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 47m 48s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 20m 36s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 49m 57s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 20m 44s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 50m 45s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="rspec - 2019.05.15 at 23h 21m 26s.xml">
+    <history-entry file="rspec - 2019.07.27 at 21h 51m 14s.xml">
       <configuration name="rspec" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23527000" />
+    <option name="totallyTimeSpent" value="25689000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="705" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1898223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19224556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30794165" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45056728" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.4502447" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955357" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -242,7 +278,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.19286872" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.4502447" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.36995155" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -252,8 +289,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding tests for wages over ceiling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding tests for wages over ceiling" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/grossUp@rspec.rcov" NAME="rspec Coverage Results" MODIFIED="1558319228643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="grossUp" />
+    <SUITE FILE_PATH="coverage/grossUp@rspec.rcov" NAME="rspec Coverage Results" MODIFIED="1564275073650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="grossUp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.sh">
@@ -262,9 +303,6 @@
           <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/grossUp_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -317,31 +355,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/TaxCalculator_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/employee.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Result.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="271">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/TaxCalculator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="87">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/employee.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Result.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Server.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

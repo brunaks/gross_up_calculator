@@ -30,18 +30,6 @@ class TaxInformation
     @taxable_amount = taxable_amount
   end
 
-  def description=(description)
-    @description = description
-  end
-
-  def tax_amount=(amount)
-    @tax_amount = amount
-  end
-
-  def taxable_amount=(amount)
-    @taxable_amount = amount
-  end
-
   def description
     @description
   end
